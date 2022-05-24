@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Application</title>
+    <title>Movie ChatBot Application</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
-    <h1>Hello World, this is from the template</h1>
+
+<div class="info"> 
+    <div class="info-header">
+        <h1>Welcome!</h1>
+    </div>
+    <div class="content1">
+        <p class="members">Group Members: Tim, Maria, JiaJun</p>
+        <p class="project-exp">Project explanation: This is a ChatBot that is going to select a movie of your liking based on the mood that you are in today! Moods such as happy or sad should be enough to determine what kind of movie you would like to watch. You can also look up movie details as well, such as asking for a specific movie's synopsis.</p> 
+    </div>
+</div>
+
+<div class="container">
+    <div class="header">
+        <h1>Movie ChatBot</h1>
+    </div>
+    <div class="body">
+        <!-- message samples -->
+        <p class="message">Hello</p>
+        <p class="message user_message">Hi</p>
+    </div>
+    <div class="footer">
+        <form>
+            <input type="text" name="">
+            <button>SEND</button>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
