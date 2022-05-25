@@ -1,0 +1,59 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "yo", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+        },
+        {"tag": "age",
+         "patterns": ["How old", "How old is tim", "What is your age", "How old are you", "Age?"],
+         "responses": ["I am 21 years old!", "21 years young!"]
+        },
+        {"tag": "name",
+         "patterns": ["What is your name", "What should I call you", "Whats your name?"],
+         "responses": ["You can call me Tim.", "I'm Tim!", "I'm Tim aka Tech With Tim."]
+        },
+        {"tag": "hours",
+         "patterns": ["When are you guys open", "What are your hours", "Hours of operation"],
+         "responses": ["We are open 9am-4pm Monday-Friday!"]
+        },
+        {"tag": "movies",
+         "patterns": ["What type of genres do you have", "What is popular", "What do you recommend", "W"],
+         "responses": ["Here is the list of the movies"]
+        },
+        {"tag": "feel_sad",
+         "patterns": ["I'm feeling sad", "I'm sad", "sad", "I'm not doing well"],
+         "responses": ["I think happy movies can help, and here is the list of them","Hope this list of movies can make your day", "I bring you a happy list of movies, You are welcome :) "]
+        },
+        {"tag": "feel_happy",
+         "patterns": ["I'm feeling happy", "I'm happy", "happy", "I'm feeling good"],
+         "responses": ["Feeling well, it's time to watch some sad movies", "Hope this list of movies can make your cry all day", "Here you go, You are welcome :) "]
+        },
+        {"tag": "deny",
+         "patterns": ["No.", "another one, please.", "I don't like that", "do you have another one?", "I don't want to", "I don't think so","I don't like this", "I do not like this", "I do not want this","I do not think this is good", "I do not want to watch this"],
+         "responses": ["Maybe tell me what type of movies do you like?", "What type of genres movies do you want to see more?"]
+        },
+        {"tag": "overview",
+         "patterns": ["what is this movie about", "movie details", "movie summary", "Can you tell me more about this movie?", ""],
+         "responses": ["Here is the movie synopsis"]
+        },
+        {"tag": "Yes",
+         "patterns": ["Yes", "I will choose", "My choice is", "Play the ", "I will select the ", "I will pick the"],
+         "responses": [""]
+        },
+        {"tag": "score",
+         "patterns": ["What is this movie's score", "Movie score", "score"],
+         "responses": ["This is the movie's score:"]
+        },
+        {"tag": "content_rating",
+         "patterns": ["PG", "adult content", "what is the rating for this movie", "movie rating"],
+         "responses": ["Here is the content rating for this movie"]
+        },
+        {"tag": "genres",
+         "patterns": ["I want to see kind of movie", "I want to watch type of movie", "Can you show me", "Can you bring me","Show me list of movies"],
+         "responses": ["Here is the content rating for this movie"]
+        }
+   ]
+}
