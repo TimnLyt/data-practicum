@@ -1,20 +1,13 @@
-import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
 from flask import Flask, render_template, request
-from flask_ngrok import run_with_ngrok
 import numpy as np
 import pickle
 import json
 import random
-from nltk.stem import WordNetLemmatizer
-from keras.models import load_model
 import pandas as pd
 from collections import Counter
-
+from keras.models import load_model
 
 app = Flask(__name__)
-# run_with_ngrok(app)
 
 @app.route("/")
 def home():
@@ -24,7 +17,6 @@ imdb = pd.read_csv("imdb_top_1000.csv")
 summary = []
 overview = imdb[imdb.columns[7]]
 movie_list = imdb[imdb.columns[1]]
-lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
@@ -89,9 +81,7 @@ def get_sad():
   return sad_list
 
 def clean_up_sentence(sentence):
-  sentence_words = nltk.word_tokenize(sentence)
-  sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
-
+  sentence_words = sentence.split()
   return sentence_words
 
 def bag_of_words(sentence):
